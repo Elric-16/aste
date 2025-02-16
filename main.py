@@ -50,6 +50,14 @@ def main():
                 sys.exit()
 
 
+
+            for shot in shots:
+                if aste.collision(shot):
+                    shot.kill()
+                    aste.split()
+
+
+
         
         screen.fill("black")
 
